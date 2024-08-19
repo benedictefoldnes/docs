@@ -1,91 +1,135 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Veiledning",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "light": "/logo/logo.png",
+    "dark": "/logo/logo.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
-    "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
-    }
+    "primary": "#14565A",
+    "light": "#EDEDED",
+    "dark": "#14565A"
+  },
+  "modeToggle": {
+    "default": "light",
+    "isHidden": true
+  },
+  "topbarCtaButton": {
+    "name": "Gå til Dashboard",
+    "url": "https://dashboard.arealize.ai/"
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Kontakt oss",
+      "url": "mailto:benedicte@arealize.ai"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+  "feedback": {
+    "suggestEdit": true
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
+  "search": {
+    "prompt": "Søk..."
+  },
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Kom i gang",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "pages/kom-i-gang/hjem",
+        "pages/kom-i-gang/logg-inn"
+      ]
+    }, 
+    {
+      "group": "Dashboard",
+      "pages": [
+        {
+          "group": "Nytt bygg",
+          "icon": "sparkle",
+          "pages": [
+            "pages/dashboard/nytt-bygg/opprett-bygg",
+            "pages/dashboard/nytt-bygg/legg-til-etasjer"
+
+          ]
+        },
+        {
+          "group": "Leietakerkrav",
+          "icon": "pen",
+          "pages": [
+            "pages/dashboard/leietakerkrav/opprett-leietaker",
+            "pages/dashboard/leietakerkrav/rediger-leietaker"
+
+          ]
+        },
+        {
+          "group": "Aktivering",
+          "icon": "robot",
+          "pages": [
+            "pages/dashboard/aktivering/digitalisering",
+            "pages/dashboard/aktivering/generering"
+
+          ]
+        },
+        {
+          "group": "Innstillinger",
+          "icon": "gear",
+          "pages": [
+            "pages/dashboard/innstillinger/legg-til-kategori",
+            "pages/dashboard/innstillinger/opprett-mappe",
+            "pages/dashboard/innstillinger/varslinger"
+          ]
+        }
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Engine",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "pages/engine/dupliser-etasje",
+        {
+          "group": "Verktøy",
+          "icon": "hammer",
+          "pages": [
+            "pages/engine/verktoy/legg-til-mobler",
+            "pages/engine/verktoy/automatisk-moblering",
+            "pages/engine/verktoy/legg-til-vegg",
+            "pages/engine/verktoy/legg-til-dor",
+            "pages/engine/verktoy/legg-til-vindu"
+
+          ]
+        },
+        {
+          "group": "Arealer",
+          "icon": "draw-square",
+          "pages": [
+            "pages/engine/arealer/areal-og-statistikk",
+            "pages/engine/arealer/opprett-soner"
+          ]
+        },
+        {
+          "group": "Eksportering",
+          "icon": "download",
+          "pages": [
+            "pages/engine/eksportering/eksporter-pdf",
+            "pages/engine/eksportering/eksporter-dwg"
+          ]
+        },
+        {
+          "group": "Innstillinger",
+          "icon": "gear",
+          "pages": [
+            "pages/engine/innstillinger/3d-visning",
+            "pages/engine/innstillinger/lover-og-regelverk",
+            "pages/engine/innstillinger/hurtigtaster"
+          ]
+        }
       ]
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+    "linkedin": "https://www.linkedin.com/company/arealize/"
+  },
+  "redirects": [
+    {
+      "source": "/pages/dashboard/nytt-bygg/opprett-etasje",
+      "destination": "/pages/dashboard/nytt-bygg/legg-til-etasjer"
+    }
+  ]  
 }
