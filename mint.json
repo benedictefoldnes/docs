@@ -1,5 +1,5 @@
 {
-  "name": "Veiledning",
+  "name": "Guide",
   "logo": {
     "light": "/logo/logo.png",
     "dark": "/logo/logo.png"
@@ -15,12 +15,12 @@
     "isHidden": true
   },
   "topbarCtaButton": {
-    "name": "Gå til Dashboard",
+    "name": "Visit Dashboard",
     "url": "https://dashboard.arealize.ai/"
   },
   "topbarLinks": [
     {
-      "name": "Kontakt oss",
+      "name": "Contact us",
       "url": "mailto:benedicte@arealize.ai"
     }
   ],
@@ -28,53 +28,45 @@
     "suggestEdit": true
   },
   "search": {
-    "prompt": "Søk..."
+    "prompt": "Search..."
   },
   "navigation": [
     {
-      "group": "Kom i gang",
+      "group": "Get started",
       "pages": [
-        "pages/kom-i-gang/hjem",
-        "pages/kom-i-gang/logg-inn"
+        "pages/get-started/home",
+        "pages/get-started/log-in"
       ]
     }, 
     {
       "group": "Dashboard",
       "pages": [
         {
-          "group": "Nytt bygg",
+          "group": "New building",
           "icon": "sparkle",
           "pages": [
-            "pages/dashboard/nytt-bygg/opprett-bygg",
-            "pages/dashboard/nytt-bygg/legg-til-etasjer"
+            "pages/dashboard/new-building/add-building",
+            "pages/dashboard/new-building/add-floors"
 
           ]
         },
         {
-          "group": "Leietakerkrav",
+          "group": "Tenant requirements",
           "icon": "pen",
           "pages": [
-            "pages/dashboard/leietakerkrav/opprett-leietaker",
-            "pages/dashboard/leietakerkrav/rediger-leietaker"
+            "pages/dashboard/tenant-requirements/create-tenant",
+            "pages/dashboard/tenant-requirements/edit-tenant"
 
           ]
         },
+          "pages/dashboard/digitalisation",
         {
-          "group": "Aktivering",
-          "icon": "robot",
-          "pages": [
-            "pages/dashboard/aktivering/digitalisering",
-            "pages/dashboard/aktivering/generering"
-
-          ]
-        },
-        {
-          "group": "Innstillinger",
+          "group": "Settings",
           "icon": "gear",
           "pages": [
-            "pages/dashboard/innstillinger/legg-til-kategori",
-            "pages/dashboard/innstillinger/opprett-mappe",
-            "pages/dashboard/innstillinger/varslinger"
+            "pages/dashboard/settings/create-category",
+            "pages/dashboard/settings/create-folder",
+            "pages/dashboard/settings/notifications"
           ]
         }
       ]
@@ -82,42 +74,41 @@
     {
       "group": "Engine",
       "pages": [
-        "pages/engine/dupliser-etasje",
+        "pages/engine/duplicate-floor",
         {
-          "group": "Verktøy",
+          "group": "Tools",
           "icon": "hammer",
           "pages": [
-            "pages/engine/verktoy/legg-til-mobler",
-            "pages/engine/verktoy/automatisk-moblering",
-            "pages/engine/verktoy/legg-til-vegg",
-            "pages/engine/verktoy/legg-til-dor",
-            "pages/engine/verktoy/legg-til-vindu"
+            "pages/engine/tools/add-furniture",
+            "pages/engine/tools/add-wall",
+            "pages/engine/tools/add-door",
+            "pages/engine/tools/add-window"
 
           ]
         },
         {
-          "group": "Arealer",
+          "group": "Areas",
           "icon": "draw-square",
           "pages": [
-            "pages/engine/arealer/areal-og-statistikk",
-            "pages/engine/arealer/opprett-soner"
+            "pages/engine/areas/area-analytics",
+            "pages/engine/areas/create-zone"
           ]
         },
         {
-          "group": "Eksportering",
+          "group": "Export",
           "icon": "download",
           "pages": [
-            "pages/engine/eksportering/eksporter-pdf",
-            "pages/engine/eksportering/eksporter-dwg"
+            "pages/engine/export/export-pdf",
+            "pages/engine/export/export-dwg"
           ]
         },
         {
-          "group": "Innstillinger",
+          "group": "Settings",
           "icon": "gear",
           "pages": [
-            "pages/engine/innstillinger/3d-visning",
-            "pages/engine/innstillinger/lover-og-regelverk",
-            "pages/engine/innstillinger/hurtigtaster"
+            "pages/engine/settings/3d-view",
+            "pages/engine/settings/rules-and-regulation",
+            "pages/engine/settings/keyboard-shortcuts"
           ]
         }
       ]
@@ -128,8 +119,8 @@
   },
   "redirects": [
     {
-      "source": "/pages/dashboard/nytt-bygg/opprett-etasje",
-      "destination": "/pages/dashboard/nytt-bygg/legg-til-etasjer"
+      "source": "/pages/dashboard/new-building/create-floor",
+      "destination": "/pages/dashboard/new-building/add-floors"
     }
   ]  
 }
