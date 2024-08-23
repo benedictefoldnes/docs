@@ -76,17 +76,6 @@
       "pages": [
         "pages/engine/duplicate-floor",
         {
-          "group": "Tools",
-          "icon": "hammer",
-          "pages": [
-            "pages/engine/tools/add-furniture",
-            "pages/engine/tools/add-wall",
-            "pages/engine/tools/add-door",
-            "pages/engine/tools/add-window"
-
-          ]
-        },
-        {
           "group": "Areas",
           "icon": "draw-square",
           "pages": [
@@ -100,15 +89,6 @@
           "pages": [
             "pages/engine/export/export-pdf",
             "pages/engine/export/export-dwg"
-          ]
-        },
-        {
-          "group": "Settings",
-          "icon": "gear",
-          "pages": [
-            "pages/engine/settings/3d-view",
-            "pages/engine/settings/rules-and-regulation",
-            "pages/engine/settings/keyboard-shortcuts"
           ]
         }
       ]
