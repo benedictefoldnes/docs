@@ -64,6 +64,7 @@
     {
       "group": "Engine",
       "pages": [
+        "pages/engine/open-floor-plan",
         "pages/engine/duplicate-floor",
         {
           "group": "Areas",
