@@ -15,7 +15,7 @@
     "isHidden": true
   },
   "topbarCtaButton": {
-    "name": "Visit Dashboard",
+    "name": "Go to Dashboard",
     "url": "https://dashboard.arealize.ai/"
   },
   "topbarLinks": [
@@ -42,30 +42,20 @@
       "group": "Dashboard",
       "pages": [
         {
-          "group": "New building",
+          "group": "Create building",
           "icon": "sparkle",
           "pages": [
-            "pages/dashboard/new-building/add-building",
-            "pages/dashboard/new-building/add-floors"
+            "pages/dashboard/create-building/create-building",
+            "pages/dashboard/create-building/add-floors"
 
           ]
         },
-        {
-          "group": "Tenant requirements",
-          "icon": "pen",
-          "pages": [
-            "pages/dashboard/tenant-requirements/create-tenant",
-            "pages/dashboard/tenant-requirements/edit-tenant"
-
-          ]
-        },
-          "pages/dashboard/digitalisation",
+          "pages/dashboard/digitalise-floor",
         {
           "group": "Settings",
           "icon": "gear",
           "pages": [
             "pages/dashboard/settings/create-category",
-            "pages/dashboard/settings/create-folder",
             "pages/dashboard/settings/notifications"
           ]
         }
@@ -96,11 +86,5 @@
   ],
   "footerSocials": {
     "linkedin": "https://www.linkedin.com/company/arealize/"
-  },
-  "redirects": [
-    {
-      "source": "/pages/dashboard/new-building/create-floor",
-      "destination": "/pages/dashboard/new-building/add-floors"
-    }
-  ]  
+  }
 }
