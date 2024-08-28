@@ -42,11 +42,11 @@
       "group": "Dashboard",
       "pages": [
         {
-          "group": "Create building",
+          "group": "Buildings",
           "icon": "sparkle",
           "pages": [
-            "pages/dashboard/create-building/create-building",
-            "pages/dashboard/create-building/add-floors"
+            "pages/dashboard/buildings/create-building",
+            "pages/dashboard/buildings/add-floors"
 
           ]
         },
@@ -55,7 +55,7 @@
           "group": "Settings",
           "icon": "gear",
           "pages": [
-            "pages/dashboard/settings/create-category",
+            "pages/dashboard/settings/create-tags",
             "pages/dashboard/settings/notifications"
           ]
         }
