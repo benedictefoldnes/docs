@@ -78,8 +78,8 @@
           "group": "Export",
           "icon": "download",
           "pages": [
-            "pages/engine/export/export-pdf",
-            "pages/engine/export/export-dwg"
+            "pages/engine/export/download-pdf",
+            "pages/engine/export/download-excel"
           ]
         }
       ]
